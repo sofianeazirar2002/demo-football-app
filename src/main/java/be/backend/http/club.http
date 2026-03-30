@@ -1,0 +1,2 @@
+GET http://localhost:8080/footy-pronostic/v1/clubs/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZTEyMyIsImlhdCI6MTc1Nzk1ODYxOSwiZXhwIjoxNzU4MDQ1MDE5fQ.JqOK0W2vhTcbvoCN1yckCoOEOHDfMD_f4rqPUFbauFo

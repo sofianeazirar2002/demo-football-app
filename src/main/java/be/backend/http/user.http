@@ -1,0 +1,38 @@
+POST http://localhost:8080/footy-pronostic/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "username123",
+  "email": "email@outlook.com",
+  "password": "password123"
+}
+
+### other user
+POST http://localhost:8080/footy-pronostic/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "username1",
+  "email": "email@outlook.com",
+  "password": "password1"
+}
+
+### Login
+POST http://localhost:8080/footy-pronostic/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "username123",
+  "password": "password123"
+}
+
+### Authenticated request naar /me endpoint
+GET http://localhost:8080/footy-pronostic/v1/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZTEyMyIsImlhdCI6MTc1NTYyNjUyMSwiZXhwIjoxNzU1NzEyOTIxfQ.WYmsudaTczPCq42u7C3yVJ8SMdR1bUq7WUedgpEPol8
+
+### update user info
+PUT http://localhost:8080/footy-pronostic/v1/auth?username=coell&logoPath=vini.png
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyIiwiaWF0IjoxNzU2OTI4NTcyLCJleHAiOjE3NTcwMTQ5NzJ9.gaE10HyHedwxl-NsYzMfX2Ej1nw_HFdduv4dIqcYKmU
+
+### check username
+GET http://localhost:8080/footy-pronostic/v1/auth/check?username=sssssss&password=sssssss

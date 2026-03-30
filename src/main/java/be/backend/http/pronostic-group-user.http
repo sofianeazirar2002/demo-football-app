@@ -1,0 +1,2 @@
+GET http://localhost:8080/footy-pronostic/v1/pronostic-group-users?groupId=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzIiwiaWF0IjoxNzU2NTc5MTY3LCJleHAiOjE3NTY2NjU1Njd9.MUM414WnJbTbdWSgqz1m80vZPlrOrlUjID4Vp02ULE4

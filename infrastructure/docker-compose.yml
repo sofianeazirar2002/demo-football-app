@@ -1,0 +1,35 @@
+services:
+  mysql_pron_db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: 'footballdb'
+      MYSQL_USER: 'demo_user'
+      MYSQL_PASSWORD: 'demo'
+      MYSQL_ROOT_PASSWORD: 'demo'
+    ports:
+      - '33060:3306'
+    networks:
+      - backend
+    volumes:
+      - ./kdg/mysql/data:/var/lib/mysql
+
+  postgres_football_test_db:
+    image: postgres
+    environment:
+      POSTGRES_DB: 'pron_test_db'
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+    ports:
+      - '54321:5432'
+    networks:
+      - test-backend
+    volumes:
+      - ./kdg/test/postgres/data:/var/lib/postgresql/data
+
+networks:
+  backend:
+    name: back-network
+    driver: bridge
+  test-backend:
+    name: test-back-network
+    driver: bridge

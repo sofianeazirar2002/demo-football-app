@@ -1,0 +1,7 @@
+-- INSERT INTO competition (id, name,logo_png)
+-- VALUES (1, 'Premier League','premierleague.png'),
+--          (2, 'La Liga', 'laliga.png'),
+--          (3, 'Bundesliga', 'bundesliga.png'),
+--          (4, 'Serie A', 'seriea.png'),
+--          (6, 'Champions League', 'ucl.png');
+--

@@ -1,0 +1,2 @@
+GET http://localhost:8080/footy-pronostic/v1/competitions/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZTEyMyIsImlhdCI6MTc1NTYyNzM5NSwiZXhwIjoxNzU1NzEzNzk1fQ.Fne_lglNWXssBzDOCPdqPFBEINndDm4Dz2BDLZCj0gQ
